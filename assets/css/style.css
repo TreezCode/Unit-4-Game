@@ -1,0 +1,129 @@
+
+/* Main Elements
+================================================================ */
+h1 {
+    font-size: 2.5em;
+}
+
+.container {
+    max-width: 960px;
+    margin: auto;
+}
+
+/* Header
+=================================================== */
+.header-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.header-wrap {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    background: #ebebeb;
+    text-align: center;
+    padding: 1em;
+    margin-top: 1em;
+    margin-bottom: 0.75em;
+}
+
+/* Intro Page
+===================================================== */
+.intro-page {
+    display: none;
+}
+
+/* Game Page
+====================================================== */
+.game-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 0.5em;
+}
+
+.score-item1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background: #ebebeb;
+    text-align: center;
+    padding: 1em;
+}
+
+.score-item2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background: #ebebeb;
+    text-align: center;
+    padding: 1em;
+}
+
+.score-item3 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    background: #ebebeb;
+    text-align: center;
+    padding: 1em;
+}
+
+.score-item4 {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    background: #ebebeb;
+    text-align: center;
+    padding: 1em;
+}
+
+.target-item {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    background: #ebebeb;
+    text-align: center;
+    padding: 1em;
+}
+
+.crystal-item1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background: #ebebeb;
+    text-align: center;
+    padding: 1em;
+    cursor: pointer;
+}
+
+.crystal-item2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background: #ebebeb;
+    text-align: center;
+    padding: 1em;
+    cursor: pointer;
+}
+.crystal-item3 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    background: #ebebeb;
+    text-align: center;
+    padding: 1em;
+    cursor: pointer;
+}
+.crystal-item4 {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    background: #ebebeb;
+    text-align: center;
+    padding: 1em;
+    cursor: pointer;
+}
+
+.user-score-grid {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    background: #ebebeb;
+    text-align: center;
+    padding: 1em;
+}
+
+.btn {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}

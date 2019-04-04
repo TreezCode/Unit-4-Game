@@ -1,12 +1,10 @@
 
 /* Main Elements
 =========================================================================== */
-html {
-    background: url('https://images.pexels.com/photos/952670/pexels-photo-952670.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') no-repeat center center fixed;
-    background-size: cover;
-}
 
 body {
+    background: url('https://images.pexels.com/photos/952670/pexels-photo-952670.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') no-repeat center center fixed;
+    background-size: cover;
     font-family: 'Karla', sans-serif;
     line-height: 1.6em;
 }
@@ -24,19 +22,14 @@ h1 {
 /* Header
 ====================================================================== */
 .header-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
     background: #5c5c5cbe;
     border-radius: 10px;
     box-shadow: inset 0px 0px 15px 5px rgba(0,0,0,0.65);
-    min-width: 700px;
     margin-top: 5em;
     margin-bottom: 0.5em;
 }
 
 .header-wrap {
-    grid-column-start: 1;
-    grid-column-end: 5;
     font-weight: bold;
     font-size: 1.8em;
     font-family: 'Luckiest Guy', cursive;
@@ -56,7 +49,7 @@ h1 {
 
 #title-grid {
     background: #5c5c5cbe;
-    color: white;
+    color: #ebebeb;
     font-size: 1.6em;
     font-family: 'Cinzel', serif;
     text-align: center;
@@ -145,7 +138,7 @@ padding: 1em 0em;
     grid-column-start: 1;
     grid-column-end: 5;
     background: #5c5c5cbe;
-    color: white;
+    color: #ebebeb;
     font-size: 1.5em;
     text-align: center;
     padding: 1em;
@@ -200,7 +193,7 @@ padding: 1em 0em;
     grid-column-start: 1;
     grid-column-end: 5;
     background: #5c5c5cbe;
-    color: white;
+    color: #ebebeb;
     font-size: 1.5em;
     text-align: center;
     padding: 1em;
@@ -224,4 +217,61 @@ padding: 1em 0em;
 
 #next-btn:hover {
     background: #480079b9;
+}
+
+/* Footer 
+===============================================================*/
+footer{
+    width: 100%;
+    margin-top: 5em;
+    background: #5c5c5cbe;
+    box-shadow: inset 0px 0px 15px 5px rgba(0,0,0,0.65);
+}
+
+#footer-info {
+    justify-content: center;
+    text-align: center;
+}
+
+#footer-info > ul {
+    margin: 0;
+    padding: 0.5em;
+}
+
+#footer-info > ul li {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+#footer-info > ul li a {
+    display: block;
+    padding: 14px 16px;
+   
+}
+.footerLinks a {
+    color: white;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+.footerLinks a:hover {
+    color: #b6b6b6;
+}
+
+/******* Keeps Footer at Bottom *******/
+ 
+ html {
+     height: 100vh;
+}
+ 
+ body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: 1fr auto;
+ }
+ 
+ .footer {
+    grid-row-start: 2;
+    grid-row-end: 3;
 }

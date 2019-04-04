@@ -1,8 +1,19 @@
 
 /* Main Elements
-================================================================ */
+=========================================================================== */
+html {
+    background: url('https://images.pexels.com/photos/952670/pexels-photo-952670.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    line-height: 1.6em;
+}
+
 h1 {
     font-size: 2.5em;
+    line-height: 1em;
 }
 
 .container {
@@ -11,119 +22,206 @@ h1 {
 }
 
 /* Header
-=================================================== */
+====================================================================== */
 .header-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    background: #5c5c5cbe;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 15px 5px rgba(0,0,0,0.65);
+    min-width: 700px;
+    margin-top: 5em;
+    margin-bottom: 0.5em;
 }
 
 .header-wrap {
     grid-column-start: 1;
     grid-column-end: 5;
-    background: #ebebeb;
+    font-weight: bold;
+    font-size: 1.8em;
+    font-family: 'Luckiest Guy', cursive;
     text-align: center;
     padding: 1em;
-    margin-top: 1em;
-    margin-bottom: 0.75em;
+    background: url(http://apod.nasa.gov/apod/image/0603/coma_misti.jpg) -80px -80px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
 }
 
 /* Intro Page
-===================================================== */
-.intro-page {
-    display: none;
+========================================================================== */
+#intro-page {
+    display: grid;
 }
 
+#title-grid {
+    background: #5c5c5cbe;
+    color: white;
+    font-size: 1.6em;
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    padding: 1em;
+    margin-bottom: 0.5em;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 15px 5px rgba(0,0,0,0.65);
+}
+
+#intro-grid {
+    background: #5c5c5cbe;
+    color: #ebebeb;
+    font-size: 1.3em;
+    line-height: 1.8em;
+    padding: 1em;
+    margin-bottom: 0.5em;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 15px 5px rgba(0,0,0,0.65);
+}
+
+#start-btn {
+    background: #6800ad;
+    color: white;
+    font-size: 1em;
+    padding: 0.5em 0.75em;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.25s;
+    box-shadow: inset 0px 0px 15px 5px rgba(0,0,0,0.65);
+}
+
+#start-btn:hover {
+    background: #480079b9;
+}
 /* Game Page
-====================================================== */
-.game-page {
+====================================================================== */
+#game-page {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 0.5em;
+    display: none;
 }
 
 .score-item1 {
     grid-column-start: 1;
     grid-column-end: 2;
-    background: #ebebeb;
-    text-align: center;
-    padding: 1em;
+
 }
 
 .score-item2 {
     grid-column-start: 2;
     grid-column-end: 3;
-    background: #ebebeb;
-    text-align: center;
-    padding: 1em;
 }
 
 .score-item3 {
     grid-column-start: 3;
     grid-column-end: 4;
-    background: #ebebeb;
-    text-align: center;
-    padding: 1em;
+    display: grid;
+
 }
 
 .score-item4 {
     grid-column-start: 4;
     grid-column-end: 5;
-    background: #ebebeb;
+
+}
+
+.score-item1, 
+.score-item2, 
+.score-item3, 
+.score-item4 {
+    background: #5c5c5cbe;
+    color: white;
+    font-size: 1.3em;
     text-align: center;
     padding: 1em;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 15px 5px rgba(0,0,0,0.65);
+}
+
+#message {
+padding: 1em 0em;
 }
 
 .target-item {
     grid-column-start: 1;
     grid-column-end: 5;
-    background: #ebebeb;
+    background: #5c5c5cbe;
+    color: white;
+    font-size: 1.5em;
     text-align: center;
     padding: 1em;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 15px 5px rgba(0,0,0,0.65);
 }
 
 .crystal-item1 {
     grid-column-start: 1;
     grid-column-end: 2;
-    background: #ebebeb;
-    text-align: center;
-    padding: 1em;
-    cursor: pointer;
 }
 
 .crystal-item2 {
     grid-column-start: 2;
     grid-column-end: 3;
-    background: #ebebeb;
-    text-align: center;
-    padding: 1em;
-    cursor: pointer;
 }
 .crystal-item3 {
     grid-column-start: 3;
     grid-column-end: 4;
-    background: #ebebeb;
-    text-align: center;
-    padding: 1em;
-    cursor: pointer;
 }
 .crystal-item4 {
     grid-column-start: 4;
     grid-column-end: 5;
-    background: #ebebeb;
+}
+
+.crystal-item1,
+.crystal-item2,
+.crystal-item3,
+.crystal-item4 {
+    /* background: #5c5c5cbe; */
     text-align: center;
     padding: 1em;
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 15px 5px rgba(0,0,0,0.75);
+}
+
+#gem1, #gem2, #gem3, #gem4 {
+    border-radius: 50%;
     cursor: pointer;
+    transition: all 0.75s;
+}
+
+#gem1:hover,
+#gem2:hover,
+#gem3:hover,
+#gem4:hover {
+    transform: scale(1.04);
+    box-shadow: 0px 0px 7px 5px rgba(0,0,0,0.75);
 }
 
 .user-score-grid {
     grid-column-start: 1;
     grid-column-end: 5;
-    background: #ebebeb;
+    background: #5c5c5cbe;
+    color: white;
+    font-size: 1.5em;
     text-align: center;
     padding: 1em;
+    margin-bottom: 0.5em;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 15px 5px rgba(0,0,0,0.65);
 }
 
-.btn {
+#next-btn {
     grid-column-start: 2;
     grid-column-end: 4;
+    background: #6800ad;
+    color: white;
+    font-size: 1em;
+    padding: 0.5em 0.75em;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.25s;
+    box-shadow: inset 0px 0px 15px 5px rgba(0,0,0,0.65);
+}
+
+#next-btn:hover {
+    background: #480079b9;
 }

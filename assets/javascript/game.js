@@ -14,7 +14,8 @@ var isDone = false;
 $("alert").html = message;
 var message = "";
 
-
+// FUNCTIONS
+// =====================================================================
 function reset() {
    isDone = false;
    compGuess = Math.floor(Math.random() * 102) + 19;
@@ -26,50 +27,11 @@ function reset() {
    gem4 = Math.floor(Math.random() * 12) + 1;
    $("#target-score").html(compGuess);
    $("#user-score").html(userScore);
+   $("#wins").html(wins);
+   $("#losses").html(losses);
    $("#round").html(round);
   
 }
-
-$(".btn").on("click", function start() {
-   reset();
-   $("#message").html("");
-});
-
-$("#gem1").on("click", function gemAdd() {
-   userScore = userScore + gem1;
-   $("#user-score").html(userScore);
-   $("#message").html("That crystal is worth " + gem1 + " !");
-   if (isDone === false) {
-      scoreCheck();
-   }
-});
-
-$("#gem2").on("click", function gemAdd() {
-   userScore = userScore + gem2;
-   $("#user-score").html(userScore);
-   $("#message").html("That crystal is worth " + gem2 + " !");
-   if (isDone === false) {
-      scoreCheck();
-   }
-});
-
-$("#gem3").on("click", function gemAdd() {
-   userScore = userScore + gem3;
-   $("#user-score").html(userScore);
-   $("#message").html("That crystal is worth " + gem3 + " !");
-   if (isDone === false) {
-      scoreCheck();
-   }
-});
-
-$("#gem4").on("click", function gemAdd() {
-   userScore = userScore + gem4;
-   $("#user-score").html(userScore);
-   $("#message").html("That crystal is worth " + gem4 + " !");
-   if (isDone === false) {
-      scoreCheck();
-   }
-});
 
 function scoreCheck() {
    if (userScore === compGuess) {
@@ -99,3 +61,52 @@ function scoreCheck() {
       reset();
    }
 }
+
+// 
+// =========================================================
+$("#start-btn").on("click", function start() {
+   $("#intro-page").css('display', "none");
+   $("#game-page").css('display', "grid");
+});
+
+$("#next-btn").on("click", function start() {
+   round++
+   reset();
+   $("#message").html("");
+});
+
+$("#gem1").on("click", function gemAdd() {
+   userScore = userScore + gem1;
+   $("#user-score").html(userScore);
+   $("#message").html("You gained " + gem1 + "pts!");
+   if (isDone === false) {
+      scoreCheck();
+   }
+});
+
+$("#gem2").on("click", function gemAdd() {
+   userScore = userScore + gem2;
+   $("#user-score").html(userScore);
+   $("#message").html("You gained " + gem2 + "pts!");
+   if (isDone === false) {
+      scoreCheck();
+   }
+});
+
+$("#gem3").on("click", function gemAdd() {
+   userScore = userScore + gem3;
+   $("#user-score").html(userScore);
+   $("#message").html("You gained " + gem3 + "pts!");
+   if (isDone === false) {
+      scoreCheck();
+   }
+});
+
+$("#gem4").on("click", function gemAdd() {
+   userScore = userScore + gem4;
+   $("#user-score").html(userScore);
+   $("#message").html("You gained " + gem4 + "pts!");
+   if (isDone === false) {
+      scoreCheck();
+   }
+});

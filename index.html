@@ -3,6 +3,8 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Cinzel:900|Karla|Luckiest+Guy" rel="stylesheet">
     <!-- Style Reset -->
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <!-- Personal Stylesheet -->
@@ -17,17 +19,18 @@
                 <h1>Crystal Collector</h1>
             </div>
         </div>
-        <div class="intro-page">
+        <div id="intro-page">
             <div id="title-grid">
                 <h2>Instructions:</h2>
             </div>
             <div id="intro-grid">
-                <p>Here you will be granted a random number at the start of each round. This will be your target score.
-                </p>
-                <p>There are 4 crystals displayed below. Each crystal has its own, hidden, random value. By clicking the
-                    crytals, you will add a specific amount to your total score.</p>
+                <p>Here you will be granted a random number at the start of each round. This will be your target score.</p>
+                <br>
+                <p>There are 4 crystals displayed, each one has its own, hidden, random value. By clicking a crytal, you will add a specific amount to your total score.</p>
+                <br>
                 <p>You win the round by matching your total score to the random target score.</p>
                 <p>You lose the round if your total score goes over the target number.</p>
+                <br>
                 <p>Remeber:
                     <ul>
                         <li>The value of each crystal is RANDOM and will be hidden from you until you click it!</li>
@@ -35,13 +38,12 @@
                     </ul>
                 </p>
             </div>
-            <div id="start-grid">
-                <button>Click here to PLAY!</button>
-            </div>
+            <button id="start-btn" style="margin:auto">Click here to PLAY!</button>
         </div>
-        <div class="game-page">
+        <div id="game-page">
             <div class="score-item1">
                 <h3>Round: </h3>
+                <br>
                 <h3 id="round"></h3>
             </div>
             <div class="score-item2">
@@ -49,16 +51,18 @@
             </div>
             <div class="score-item3">
                 <p>Wins:</p>
+                <br>
                 <p id="wins"></p>
             </div>
             <div class="score-item4">
                 <p>Losses:</p>
+                <br>
                 <p id="losses"></p>
             </div>
             <div class="target-item">
                 <p>The Target Score Is:</p>
+                <br>
                 <p id="target-score"></p>
-                <p id="message"></p>
             </div>
             <div class="crystal-item1">
                 <img id="gem1" src="assets/images/gem1.jpg" alt="Purple Crystal" style="height: 200px; width:  200px">
@@ -75,10 +79,11 @@
             <div class="user-score-grid">
                 <div class="user-score-wrap">
                     <p>Your Current Score Is:</p>
+                    <br>
                     <p id="user-score"></p>
                 </div>
             </div>
-            <button class="btn" style="margin:auto">Generate New Target</button>
+            <button id="next-btn" style="margin:auto">Next Round</button>
         </div>
     </div>
 

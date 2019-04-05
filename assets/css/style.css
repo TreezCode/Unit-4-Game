@@ -14,19 +14,16 @@ h1 {
     line-height: 1em;
 }
 
-.container {
-    max-width: 960px;
-    margin: auto;
-}
+
 
 /* Header
 ====================================================================== */
 .header-grid {
     background: #5c5c5cbe;
     border-radius: 10px;
+    max-width: 960px;
+    margin: 4em auto 0.75em auto;
     box-shadow: inset 0px 0px 15px 5px rgba(0,0,0,0.65);
-    margin-top: 5em;
-    margin-bottom: 0.5em;
 }
 
 .header-wrap {
@@ -35,7 +32,7 @@ h1 {
     font-family: 'Luckiest Guy', cursive;
     text-align: center;
     padding: 1em;
-    background: url(http://apod.nasa.gov/apod/image/0603/coma_misti.jpg) -80px -80px;
+    background: url(http://apod.nasa.gov/apod/image/0603/coma_misti.jpg) -70px -30px;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 
@@ -45,6 +42,8 @@ h1 {
 ========================================================================== */
 #intro-page {
     display: grid;
+    max-width: 960px;
+    margin: auto;
 }
 
 #title-grid {
@@ -65,7 +64,7 @@ h1 {
     font-size: 1.3em;
     line-height: 1.8em;
     padding: 1em;
-    margin-bottom: 0.5em;
+    margin-bottom: 1.5em;
     border-radius: 10px;
     box-shadow: inset 0px 0px 15px 5px rgba(0,0,0,0.65);
 }
@@ -84,12 +83,14 @@ h1 {
 #start-btn:hover {
     background: #480079b9;
 }
+
 /* Game Page
 ====================================================================== */
 #game-page {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 960px;
+    margin: auto;
     grid-gap: 0.5em;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     display: none;
 }
 
@@ -107,7 +108,6 @@ h1 {
 .score-item3 {
     grid-column-start: 3;
     grid-column-end: 4;
-    display: grid;
 
 }
 
@@ -122,16 +122,16 @@ h1 {
 .score-item3, 
 .score-item4 {
     background: #5c5c5cbe;
-    color: white;
+    color: #ebebeb;
     font-size: 1.3em;
     text-align: center;
-    padding: 1em;
+    padding: 0.75em;
     border-radius: 10px;
     box-shadow: inset 0px 0px 15px 5px rgba(0,0,0,0.65);
 }
 
 #message {
-padding: 1em 0em;
+padding: 0.5em 0em;
 }
 
 .target-item {
@@ -168,14 +168,15 @@ padding: 1em 0em;
 .crystal-item2,
 .crystal-item3,
 .crystal-item4 {
-    /* background: #5c5c5cbe; */
-    text-align: center;
+    margin: auto;
     padding: 1em;
     border-radius: 50%;
     box-shadow: inset 0px 0px 15px 5px rgba(0,0,0,0.75);
 }
 
 #gem1, #gem2, #gem3, #gem4 {
+    width: 175px;
+    height: 175px;
     border-radius: 50%;
     cursor: pointer;
     transition: all 0.75s;
@@ -197,7 +198,7 @@ padding: 1em 0em;
     font-size: 1.5em;
     text-align: center;
     padding: 1em;
-    margin-bottom: 0.5em;
+    margin-bottom: 2em;
     border-radius: 10px;
     box-shadow: inset 0px 0px 15px 5px rgba(0,0,0,0.65);
 }
@@ -223,7 +224,7 @@ padding: 1em 0em;
 ===============================================================*/
 footer{
     width: 100%;
-    margin-top: 5em;
+    margin-top: 3.5em;
     background: #5c5c5cbe;
     box-shadow: inset 0px 0px 15px 5px rgba(0,0,0,0.65);
 }
@@ -259,19 +260,132 @@ footer{
     color: #b6b6b6;
 }
 
-/******* Keeps Footer at Bottom *******/
- 
- html {
-     height: 100vh;
+
+ /*  Media Queries 
+ ===============================================================*/
+ @media screen and (max-width: 980px) {
+     
+     .header-grid {
+         width: 90%;
+         margin: 3em auto 0.5em auto;
+     }
+     #intro-page {
+         width: 90%;
+         margin: auto;
+     }
+     #game-page {
+         width: 90%;
+         margin: auto;
+     }
+    .crystal-item1,
+    .crystal-item2,
+    .crystal-item3,
+    .crystal-item4,
+    #gem1, #gem2, #gem3, #gem4 {
+        height: 135px;
+        width: 135px;
+    }
 }
+
+@media only screen and (max-width: 768px) {
+
+    .header-grid {
+        width: 95%;
+        margin: 2em auto 0.5em auto;
+    }
+
+    #intro-page {
+        width: 95%;
+        margin: auto;
+    }
+
+    #title-grid {
+        margin-bottom: 0.25em;
+    }
+
+    #game-page {
+        width: 95%;
+        margin: auto;
+        grid-gap: 0.25em;
+    }
+
+    .score-item1, 
+    .score-item2, 
+    .score-item3, 
+    .score-item4 {
+        font-size: 1em;
+    }
+
+    .crystal-item1,
+    .crystal-item2,
+    .crystal-item3,
+    .crystal-item4,
+    #gem1, #gem2, #gem3, #gem4 {
+       height: 115px;
+       width: 115px;
+   }
+
+}
+
+@media only screen and (max-width: 640px) {
  
- body {
-  min-height: 100%;
-  display: grid;
-  grid-template-rows: 1fr auto;
- }
- 
- .footer {
-    grid-row-start: 2;
-    grid-row-end: 3;
+    .header-grid {
+        width: 100%;
+        margin: 0em auto 0em auto;
+    }
+    .header-wrap {
+        font-size: 1.3em;
+        padding: 1em 0;
+    }
+    #intro-page {
+        width: 100%;
+        margin: auto;
+    }
+    #title-grid {
+        margin-bottom: 0;
+    }
+    #game-page {
+        width: 100%;
+        margin: auto;
+        grid-gap: 0;
+    }
+
+    .target-item {
+        margin-bottom: 0.5em;
+    }
+
+    .crystal-item1,
+    .crystal-item2,
+    .crystal-item3,
+    .crystal-item4 {
+       height: 75px;
+       width: 75px;
+       padding: 0.75em;
+    }
+    .crystal-item1 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .crystal-item2 {
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+    .crystal-item3 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .crystal-item4 {
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+
+    #gem1, #gem2, #gem3, #gem4 {
+        height: 75px;
+        width: 75px;
+    }
+
+    #user-score-grid {
+        margin-top: 0.5em;
+    }
 }

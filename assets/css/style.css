@@ -198,6 +198,7 @@ padding: 0.5em 0em;
     font-size: 1.5em;
     text-align: center;
     padding: 1em;
+    margin-top: 0.5em;
     margin-bottom: 2em;
     border-radius: 10px;
     box-shadow: inset 0px 0px 15px 5px rgba(0,0,0,0.65);
@@ -358,8 +359,8 @@ footer{
     .crystal-item2,
     .crystal-item3,
     .crystal-item4 {
-       height: 75px;
-       width: 75px;
+       height: 100px;
+       width: 100px;
        padding: 0.75em;
     }
     .crystal-item1 {
@@ -381,8 +382,8 @@ footer{
     }
 
     #gem1, #gem2, #gem3, #gem4 {
-        height: 75px;
-        width: 75px;
+        height: 100px;
+        width: 100px;
     }
 
     #user-score-grid {

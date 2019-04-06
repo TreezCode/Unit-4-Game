@@ -286,7 +286,7 @@ footer{
 }
 
 .footerLinks a {
-    color: white;
+    color: #ebebeb;
     font-size: 1em;
     text-decoration: none;
 }
@@ -294,7 +294,6 @@ footer{
 .footerLinks a:hover {
     color: #b6b6b6;
 }
-
 
  /*  Media Queries 
  ===============================================================*/
@@ -413,6 +412,8 @@ footer{
        height: 100px;
        width: 100px;
        padding: 0.75em;
+       margin-top: 0.5em;
+       margin-bottom: 0.5em;
     }
 
     .crystal-item1 {

@@ -73,7 +73,8 @@ h1 {
     background: #6800ad;
     color: white;
     font-size: 1em;
-    padding: 0.5em 0.75em;
+    font-weight: bold;
+    padding: 0.5em 1.5em;
     border-radius: 15px;
     cursor: pointer;
     transition: all 0.25s;
@@ -117,6 +118,23 @@ h1 {
 
 }
 
+#round {
+    font-size: 1.5em;
+    font-family: 'Luckiest Guy', cursive;
+}
+
+#wins {
+    color: rgb(195, 0, 255);
+    font-size: 1.5em;
+    font-family: 'Luckiest Guy', cursive;
+}
+
+#losses {
+    color: rgb(255, 72, 0);
+    font-size: 1.5em;
+    font-family: 'Luckiest Guy', cursive;
+}
+
 .score-item1, 
 .score-item2, 
 .score-item3, 
@@ -131,7 +149,7 @@ h1 {
 }
 
 #message {
-padding: 0.5em 0em;
+padding: 1em 0em;
 }
 
 .target-item {
@@ -146,6 +164,12 @@ padding: 0.5em 0em;
     box-shadow: inset 0px 0px 15px 5px rgba(0,0,0,0.65);
 }
 
+#target-score {
+    color: rgb(40, 199, 0);
+    font-size: 1.4em;
+    font-family: 'Luckiest Guy', cursive;
+}
+
 .crystal-item1 {
     grid-column-start: 1;
     grid-column-end: 2;
@@ -155,10 +179,12 @@ padding: 0.5em 0em;
     grid-column-start: 2;
     grid-column-end: 3;
 }
+
 .crystal-item3 {
     grid-column-start: 3;
     grid-column-end: 4;
 }
+
 .crystal-item4 {
     grid-column-start: 4;
     grid-column-end: 5;
@@ -204,13 +230,20 @@ padding: 0.5em 0em;
     box-shadow: inset 0px 0px 15px 5px rgba(0,0,0,0.65);
 }
 
+#user-score {
+    font-size: 1.5em;
+    font-family: 'Luckiest Guy', cursive;
+    color: rgb(0, 214, 221)
+}
+
 #next-btn {
     grid-column-start: 2;
     grid-column-end: 4;
     background: #6800ad;
-    color: white;
+    color: #ebebeb;
     font-size: 1em;
-    padding: 0.5em 0.75em;
+    font-weight: bold;
+    padding: 0.5em 1em;
     border-radius: 15px;
     cursor: pointer;
     transition: all 0.25s;
@@ -251,6 +284,7 @@ footer{
     padding: 14px 16px;
    
 }
+
 .footerLinks a {
     color: white;
     font-size: 1em;
@@ -270,14 +304,17 @@ footer{
          width: 90%;
          margin: 3em auto 0.5em auto;
      }
+
      #intro-page {
          width: 90%;
          margin: auto;
      }
+
      #game-page {
          width: 90%;
          margin: auto;
      }
+
     .crystal-item1,
     .crystal-item2,
     .crystal-item3,
@@ -334,21 +371,35 @@ footer{
         width: 100%;
         margin: 0em auto 0em auto;
     }
+
     .header-wrap {
         font-size: 1.3em;
         padding: 1em 0;
     }
+
     #intro-page {
         width: 100%;
         margin: auto;
     }
+
+    #intro-grid {
+        font-size: 1.1em;
+    }
+
     #title-grid {
         margin-bottom: 0;
     }
+    
     #game-page {
         width: 100%;
         margin: auto;
         grid-gap: 0;
+    }
+
+    #rounds,
+    #wins,
+    #losses {
+        font-size: 1.5em;
     }
 
     .target-item {
@@ -363,6 +414,7 @@ footer{
        width: 100px;
        padding: 0.75em;
     }
+
     .crystal-item1 {
         grid-column-start: 1;
         grid-column-end: 3;
@@ -372,10 +424,12 @@ footer{
         grid-column-start: 3;
         grid-column-end: 5;
     }
+
     .crystal-item3 {
         grid-column-start: 1;
         grid-column-end: 3;
     }
+
     .crystal-item4 {
         grid-column-start: 3;
         grid-column-end: 5;
